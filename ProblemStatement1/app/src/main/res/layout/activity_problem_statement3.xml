@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProblemStatement3">
+
+    <EditText
+        android:id="@+id/edNumber"
+        android:layout_width="251dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSub"
+        app:layout_constraintEnd_toEndOf="@+id/btnMul"
+        app:layout_constraintStart_toStartOf="@+id/btnMul" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="105dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNumber" />
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:text="*"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnDiv"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="/"
+        app:layout_constraintStart_toStartOf="@+id/btnSub"
+        app:layout_constraintTop_toBottomOf="@+id/btnSub" />
+
+    <Button
+        android:id="@+id/btnAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="40dp"
+        android:text="Answer"
+        app:layout_constraintBottom_toTopOf="@+id/textAnswer"
+        app:layout_constraintStart_toStartOf="@+id/textAnswer" />
+
+    <TextView
+        android:id="@+id/textAnswer"
+        android:layout_width="148dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

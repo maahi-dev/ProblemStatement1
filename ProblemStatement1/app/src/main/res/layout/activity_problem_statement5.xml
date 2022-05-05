@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProblemStatement5">
+
+    <CheckBox
+        android:id="@+id/chkCoffee"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="53dp"
+        android:text="Coffee"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnShow"
+        app:layout_constraintEnd_toStartOf="@+id/chkTacoo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkPizza"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/chkTacoo"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="176dp"
+        android:text="Tacoo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chkCoffee"
+        app:layout_constraintTop_toBottomOf="@+id/chkBurger" />
+
+    <CheckBox
+        android:id="@+id/chkPizza"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="46dp"
+        android:text="Pizza"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkCoffee"
+        app:layout_constraintEnd_toStartOf="@+id/chkBurger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/chkBurger"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="47dp"
+        android:text="Burger"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkTacoo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chkPizza"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="104dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginBottom="73dp"
+        android:text="Show"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/chkCoffee"
+        app:layout_constraintTop_toBottomOf="@+id/chkCoffee"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="243dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShow" />
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="118dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="243dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/chkTacoo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

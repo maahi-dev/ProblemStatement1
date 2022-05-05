@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProblemStatement6">
+
+    <EditText
+        android:id="@+id/etStudentName"
+        android:layout_width="282dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="77dp"
+        android:ems="10"
+        android:hint="Studnet Name"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStudentNumber" />
+
+    <EditText
+        android:id="@+id/etStudentNumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="Student  Number"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etStudentName"
+        app:layout_constraintEnd_toEndOf="@+id/etStudentName"
+        app:layout_constraintStart_toStartOf="@+id/etStudentName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="141dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="300dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStudentName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

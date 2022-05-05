@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProblemStatement1</string>
+    <string name="problem_statement_1">Problem Statement 1</string>
+    <string name="red" />
+    <string name="greeen">Greeen</string>
+    <string name="blue">Blue</string>
+    <string name="button">Button</string>
+</resources>
